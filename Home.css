@@ -1,11 +1,9 @@
 @charset "UTF-8";
-
-    /*aqui é relativo ao cabeçalho*/
+/*aqui é relativo ao cabeçalho*/
 .headlherHome { /*posição do cabeçalho (tem que ser absoluta)*/
     margin-top: -38%;
     position: absolute;
 }
-
 /*aqui é relativo ao banner*/
 .acomoda{ /*ajustar a posção dos botões*/
     position: absolute;
@@ -37,7 +35,6 @@
 .container > img { /*definir o tamnho das fotos*/
     width: 100%;
     }
-
 /*aqui é relativo ao main*/
 #mainHome {
     width: 80%;
@@ -126,8 +123,7 @@
         margin-bottom: 5%;
     }
 }
-
-/*aqui é relativo ao main*/
+/*aqui é relativo ao peles*/
 #peles {
     margin-top: -25%;
     }
@@ -190,15 +186,18 @@
     display: block;
     position: absolute;
     width: 60%;
-    margin: -20% 0% 0% 22%;
+    margin: -280px 0% 0% 22%;
 }
-
 /*botões da mini pele*/
 #peles > #chamaMiniNav {
-    margin-bottom: -50px;
+    margin-top: -1%;
+    padding-bottom: 5px;
+    margin-bottom: -60px;
     }
 #chamaMiniNav > p {
+    margin-top: -50px;
     display: block;
+    padding-bottom: 10px;
     text-align: end;
     margin: auto;
         }
@@ -206,10 +205,8 @@
     display: inline;
         }
 .miniPele > input[type="button"] {
-    width: 24%;
-    margin: auto;
     width: 5%;
-    padding: 2%;
+    padding: 3%;
     background-repeat: no-repeat;
     background-size: 100%;
     border: none;

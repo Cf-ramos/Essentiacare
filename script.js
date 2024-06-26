@@ -17,7 +17,6 @@ function temporizador() { //o TEMPORIZADOR define a animação do banner
     setInterval (temporizador, 8000); //define o intervalo entre a animação do Banner
     }
 
-
 function navBanner(n) { //o NAV BANNER permite a navegação atravez dos botões
     const box = document.getElementById("container")
     box.style.transform = `translateX(${-n * 100}%)`
@@ -216,7 +215,9 @@ function animaLogin(){
     let boasVindas = document.createElement("p")
 
         boasVindas.id = `boasVindas`
-        boasVindas.innerHTML = "Boas Vindas!"
+        boasVindas.innerHTML += `Olá, (var nome)!
+        <p>Nós da Essentiacare te damos as boas vindas ao mundo do auto cuidado! Vamos começar essa jornada? 
+        <br> <input type="button" value="Vamos lá!" onclick='Index()'>`
 
     /* assim que chama a função eu mexo na escala aqui */
     vetor.style.transform = `scale(30%)`
@@ -235,12 +236,10 @@ function animaLogin(){
     function completaAnima(){
         mostra.appendChild(boasVindas) 
         boasVindas.style.transitionTimingFunction = `ease-in`
-        vetor.style.scale = `150%`
-        setTimeout(Index, 1000) 
-    }
+        vetor.style.scale = `500%`
+    }        
+}
 
-    function Index(){
-        window.location.href = "index.html"
-    }
-        
+function Index(){
+    window.location.href = "index.html"
 }

@@ -45,21 +45,19 @@ input[type="button"]:hover {
 }
 #mainPerfil > h2 {
     display: block;
-    padding: 3%;
     text-align: center;
     margin: auto;
 }
 #dados {
-    margin-top: 3%;
     padding-left: 180px;
     display: block;
     width: 80%;
 }
 #dados > p { 
-    margin-bottom: 0%;
+    margin-bottom: 3px;
 }
 #dados > h1 { 
-    margin-bottom: -3%;
+    margin-bottom: -15px; 
 }
 hr {
     margin: 2%;
