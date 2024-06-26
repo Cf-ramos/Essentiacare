@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essentiacare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="shortcut icon" href="Logo icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body onload="temporizador()">
+
+    <nav id="navHome">
+            <div id="container" class="container">
+                    <!--adiciona as imagens-->
+                    <img src="midias/banner0.png" id="primeiraImg" alt="banner campanha de protetor solar facial">
+                    <img src="midias/banner1.png" id="segundaImg" alt="banner campanha linha essencial descubra">
+                    <img src="midias/banner2.png" id="terceiraImg" alt="banner campanha 'cuidar de sí'">
+            </div>
+            <div class="acomoda">
+                <!--define a posição dos radios-->
+                <label for="rad1" class="manual"></label>
+                <label for="rad2" class="manual"></label>
+                <label for="rad3" class="manual"></label>
+                 <!--adiciona os radios-->
+            <input type="radio" name="temqueter" id="rad1" class="controSlide" onclick="navBanner(0)">
+            <input type="radio" name="temqueter" id="rad2"class="controSlide" onclick="navBanner(1)">       
+            <input type="radio" name="temqueter" id="rad3"class="controSlide" onclick="navBanner(2)"> 
+            </div>
+    </nav>
+    <headlher class="headlherHome">
+        <a href="index.html"><img src="midias/logohome.png" alt="logo" width="150px"></a>
+        <a href="Login.html" id="login">Login</a>
+        <a href="Produtos.html">Produtos</a>
+        <a href="Perfil.html">Perfil</a>
+        <input type="text" name="pesquisa" id="pesquisa">
+    </headlher>
+<main id="mainHome">
+    <h1>Conhceça nossos produtos</h1>
+    <iframe src="vitrine.html" width="100%" height="500px" frameborder="0"></iframe>
+    <img src="midias/degrade.png" id="degrade" alt="degradê">
+
+    <div id="divisa">
+        <img src="midias/organicoSimples.png" id="organica" alt="imagem Organica">
+        <img src="midias/fotoOrganica.png" id="mulher" alt="Mulher em uma bicicleta">
+        <img src="midias/organicoDuplo.png" id="organicaDupla"  alt="Imagem Organica dupla">
+        <p id="textDivisa">
+            Acreditamos que cuidar de si mesmo não deve ser complicado, demorado ou caro. A Essentiacare se adapta à sua rotina corrida, levando sua autoestima e confiança, de forma prática e acessível
+        </p>
+    </div>
+    <div id="teste">
+        <img src="midias/divOrganica.png" id="primeiraDiv" alt="divisão">
+        <img src="midias/divOrganica.png" id="segundaDiv" alt="divisão">
+    </div>
+    <div id="peles">
+        <h2>
+            Não sabe qual das nossas linhas é a ideial para a sua pele? <br> Não tem problema, a gente te ajuda!
+        </h2>
+        <div id="chamaMiniNav"></div>
+        <div id="mista" class="pele">
+            <input type="button" alt="Pele Mista" onclick="Paragrafo(mista)">
+        </div>
+        <div id="seca" class="pele">
+            <input type="button" alt="Pele Seca" onclick="Paragrafo(seca)">
+        </div>
+        <div id="normal" class="pele">
+            <input type="button" alt="Pele Normal" onclick="Paragrafo(normal)">
+        </div>
+        <div id="oleosa" class="pele">
+            <input type="button" alt="Pele Oleosa" onclick="Paragrafo(oleosa)">
+        </div>
+    </div>
+</main>
+<footer>
+    Todos os direitos reservados   | @Essentiacare
+</footer>
+</body>
+</html>
