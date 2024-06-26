@@ -1,0 +1,67 @@
+@charset "UTF-8";
+#mainPerfil {
+    min-width: 90%;
+    max-width: 800px;
+    padding-top: 5%;
+    margin: auto;
+}
+#botões{
+    text-align: center;
+    margin: auto;
+}
+#dados > input[type="button"] { /*esse é o botão de sair*/
+    font-size: medium;
+    text-align: left;
+    color: var(--cor2);
+    background: none;
+    padding: 0;
+    border: none;
+}
+#dados input[type="button"]:hover {
+    color: var(--cor1);
+}
+input[type="button"] { /*esse é o botão do click aqui*/
+    font-size: medium;
+    color: var(--cor2);
+    background: none;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid var(--cor2);
+}
+input[type="button"]:hover {
+    background-color: var(--cor2);
+    color: var(--cor3);
+}
+#mainPerfil{ 
+    padding-top: 8%;
+}
+#mainPerfil > img {
+    position: absolute;
+    border-radius: 360px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border: 2px solid var(--cor0);
+}
+#mainPerfil > h2 {
+    display: block;
+    padding: 3%;
+    text-align: center;
+    margin: auto;
+}
+#dados {
+    margin-top: 3%;
+    padding-left: 180px;
+    display: block;
+    width: 80%;
+}
+#dados > p { 
+    margin-bottom: 0%;
+}
+#dados > h1 { 
+    margin-bottom: -3%;
+}
+hr {
+    margin: 2%;
+    border-color: var(--cor1);
+}

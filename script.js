@@ -212,40 +212,35 @@ function animaLogin(){
     let vetor = document.getElementById("vetor")
     let form = document.getElementById("fazerLogin")
     let formCadastro = document.getElementById("fazerCadastro")
-
-    
-    /** aqui eu to fazendo a rotação da animação*/
-    vetor.style.transform = `rotate(90deg)`
-    vetor.style.marginTop = `2%`
-    vetor.style.marginLeft = `30%`
-    vetor.style.width = `30%`
-    form.style.display = `none`
-    formCadastro.style.display = `none`
-
-        let mostra = document.getElementById("mostraBoasVindas")
-        let boasVindas = document.createElement("p")
+    let mostra = document.getElementById("mostraBoasVindas")
+    let boasVindas = document.createElement("p")
 
         boasVindas.id = `boasVindas`
         boasVindas.innerHTML = "Boas Vindas!"
-        boasVindas.style.display ="none"
+
+    /* assim que chama a função eu mexo na escala aqui */
+    vetor.style.transform = `scale(30%)`
+    form.style.display = `none`
+    formCadastro.style.display = `none` 
+    setTimeout(roda, 100)
+
+    /* aqui eu faço a rotação a partir da escala*/
+    function roda() {
+    vetor.style.scale = `30%`
+    vetor.style.transform = `rotate(90deg)`
+    vetor.style.marginTop = `-20%`
+    vetor.style.marginLeft = `10%`
+    setTimeout(completaAnima, 800)
+    }
+    function completaAnima(){
         mostra.appendChild(boasVindas) 
-        boasVindas.style.display = "inline"
+        boasVindas.style.transitionTimingFunction = `ease-in`
+        vetor.style.scale = `150%`
+        setTimeout(Index, 1000) 
+    }
 
-        setTimeout(completaAnima, 1000)
-}
-
-function completaAnima(){
-    let vetor = document.getElementById("vetor")
-    let mostra = document.getElementById("mostraBoasVindas")
-
-    vetor.style.marginTop = `-25%`
-    vetor.style.marginLeft = `-2%`
-    vetor.style.width = `100%`
-    mostra.style.display = `none`
-
-    setTimeout(Index, 800)
-}
-
-function Index(){
-    window.location.href = "index.html"
+    function Index(){
+        window.location.href = "index.html"
+    }
+        
 }

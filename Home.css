@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+    /*aqui é relativo ao cabeçalho*/
+.headlherHome { /*posição do cabeçalho (tem que ser absoluta)*/
+    margin-top: -38%;
+    position: absolute;
+}
+
+/*aqui é relativo ao banner*/
+.acomoda{ /*ajustar a posção dos botões*/
+    position: absolute;
+    display: flex;
+    margin-top: -3%;
+    margin-left: 85%;
+    width: 12%;
+    }
+.acomoda > input[type="radio"] {
+    position: relative;
+    appearance: none;
+    border-radius: 45%;
+    width: 50px;
+    height: 10px;
+    border: 1px solid var(--cor2);
+    transition: o.2s all linear;
+    }
+.acomoda > input[type="radio"]:checked {
+    border: 6px solid var(--cor2);
+    }
+.acomoda > input[type="radio"]:hover {
+        border: 6px solid var(--cor1);
+    }
+.container { /*ajustar o layout do carrossel*/
+    display: flex;
+    transition: 0.7s ease-in-out;
+    transform: translateX(0);
+    }
+.container > img { /*definir o tamnho das fotos*/
+    width: 100%;
+    }
+
+/*aqui é relativo ao main*/
+#mainHome {
+    width: 80%;
+    margin: auto;
+}
+#degrade {
+    margin-top: -10%;
+    margin-left: -20%;
+}
+#divisa {
+    width: 100%;
+    height: 270px;
+}
+#organica {
+    width: 5%;
+    position: absolute;
+    margin-left: -3%;
+}
+#mulher {
+    width: 33%;
+    position: absolute;
+    margin-left: 5%;
+    margin-left: 0%;
+}
+#textDivisa {
+    padding-top: 12%;
+    width: 47%;
+    margin-left: 42%;
+}
+#organicaDupla {
+    width: 15%;
+    position: absolute;
+    margin-top: 12%; 
+    margin-left: 72%;
+}
+#primeiraDiv {
+    width: 150%;
+    margin-top: -140px;
+    margin-left: -35%;
+}
+#segundaDiv {
+    width: 150%;
+    margin-top: -75%;
+    margin-left: -30%;
+    margin-bottom: 5%;
+}
+@media (max-width: 775px) {
+    #divisa {
+        width: 100%;
+    }
+    #organica {
+        width: 5%;
+        position: absolute;
+        margin-left: -3%;
+    }
+    #mulher {
+        width: 60%;
+        position: absolute;
+        margin-left: 5%;
+        margin-left: 8%;
+    }
+    #textDivisa {
+        padding-top: 62%;
+        width: 100%;
+        margin-left: 0;
+    }
+    #organicaDupla {
+        width: 15%;
+        position: absolute;
+        margin-top: 32%;
+        margin-left: 72%;
+    }
+    #teste{
+        margin-top: 5%;
+    }
+    #primeiraDiv {
+        width: 150%;
+        margin-top: 1%;
+        padding-top: 10%;
+        margin-left: -35%;
+    }
+    #segundaDiv {
+        width: 150%;
+        margin-top: -600px;
+        margin-left: -30%;
+        margin-bottom: 5%;
+    }
+}
+
+/*aqui é relativo ao main*/
+#peles {
+    margin-top: -25%;
+    }
+#peles > h2 {
+    padding-bottom: 8%;
+    }
+#peles > p {
+    padding-bottom: 5%;
+    display: block;
+    text-align: center;
+    margin: auto;
+    }
+.pele {
+    display: inline;
+    }
+.pele > input[type="button"] {
+    width: 24%;
+    margin: auto;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    background-color: var(--cor3);
+    }
+
+/*botões da pele*/
+#mista > input[type="button"] {
+    background-image: url("midias/peleMista.png");
+    background-color: var(--cor3);
+}
+#mista > input[type="button"]:hover {
+    background-image: url("midias/mistaText.png");
+    background-size: 100%;
+}
+#seca > input[type="button"] {
+    background-image: url("midias/peleSeca.png");
+    background-color: var(--cor3);
+}
+#seca > input[type="button"]:hover {
+    background-image: url("midias/secaText.png");
+    background-size: 100%;
+    }
+#normal > input[type="button"] {
+    background-image: url("midias/peleNormal.png");
+    background-color: var(--cor3);
+}
+#normal > input[type="button"]:hover {
+    background-image: url("midias/normalText.png");
+    background-size: 100%;
+}
+#oleosa > input[type="button"] {
+    background-image: url("midias/peleOleosa.png");
+    background-color: var(--cor3);
+}
+#oleosa > input[type="button"]:hover {
+    background-image: url("midias/oleosaText.png");
+    background-size: 100%;
+}
+#paragrafo {
+    display: block;
+    position: absolute;
+    width: 60%;
+    margin: -20% 0% 0% 22%;
+}
+
+/*botões da mini pele*/
+#peles > #chamaMiniNav {
+    margin-bottom: -50px;
+    }
+#chamaMiniNav > p {
+    display: block;
+    text-align: end;
+    margin: auto;
+        }
+.miniPele {
+    display: inline;
+        }
+.miniPele > input[type="button"] {
+    width: 24%;
+    margin: auto;
+    width: 5%;
+    padding: 2%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border: none;
+    background-color: var(--cor3);
+        }
+#miniMista > input[type="button"] {
+    background-image: url("midias/peleMista.png");
+    background-color: var(--cor3);
+        }
+#miniMista > input[type="button"]:hover {
+    background-image: url("midias/mistaText.png");
+    background-size: 100%;
+        }
+#miniSeca > input[type="button"] {
+    background-image: url("midias/peleSeca.png");
+    background-color: var(--cor3);
+        }
+#miniSeca > input[type="button"]:hover {
+    background-image: url("midias/secaText.png");
+    background-size: 100%;
+        }
+#miniNormal > input[type="button"] {
+    background-image: url("midias/peleNormal.png");
+    background-color: var(--cor3);
+        }
+#miniNormal > input[type="button"]:hover {
+    background-image: url("midias/normalText.png");
+    background-size: 100%;
+        }
+#miniOleosa > input[type="button"] {
+    background-image: url("midias/peleOleosa.png");
+    background-color: var(--cor3);
+        }
+#miniOleosa > input[type="button"]:hover {
+    background-image: url("midias/oleosaText.png");
+    background-size: 100%;
+        }
+@media (max-width: 500px) {
+    .miniPele > input[type="button"] {
+        width: 24%;
+        margin: auto;
+        width: 6%;
+        padding: 4%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: none;
+        background-color: var(--cor3);
+        }
+    .miniPele {
+        display: block;
+        }
+    #miniOleosa {
+        margin-bottom: -60%;
+    }
+    #chamaMiniNav > p {
+        width: 50%;
+        display: inline;
+        text-align: end;
+        margin: auto;
+        }
+    .pele > input[type="button"] {
+        width: 48%;
+        margin: auto;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: none;
+        background-color: var(--cor3);
+        }
+    #paragrafo {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0%;
+    }
+}
